@@ -1,15 +1,15 @@
-# Node Catapult - Angular
+# Scavenger Hunt
 
-A boilerplate starter project that includes Node, Express, and Angular:
+A MakerSquare project user to teach the fundamentals of javascript
 
-* Lightweight - Comprehend everything.
+* Basic - Comprehend everything.
 * Logical - Firm basics for development and production.
-* Swift - Get started immediately.
+* Fun - Get started immediately.
 
 ## Getting Started
 
 ```
-$ git clone https://github.com/dYale/node-catapult-angular my-project
+$ git clone https://github.com/mwheatley3/wwsh my-project
 $ cd my-project
 $ npm install
 $ bower install
@@ -18,9 +18,5 @@ $ npm start
 
 Now visit [localhost:4000](http://localhost:4000/)
 
-### Running the Tests
-
-There is a basic test framework in your `test/` folder. To run the tests, simply run `npm test`.
-
 ## Credits
-Inspired by the original Node-Catapult developed by mindeavor found at: https://github.com/mindeavor/node-catapult
+Michael Wheatley and Mac Evans
