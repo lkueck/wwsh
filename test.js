@@ -29,9 +29,12 @@ var trueValue = 3 > 2;
 
 //DOnt TOUCH
 var answers = {};
+var answers.message = '';
 
 if(myString){
 	answers.myString = myString;
+} else {
+	answers.message = answers.message + 'myString DNE';
 }
 
 if(myNumber){
@@ -40,6 +43,10 @@ if(myNumber){
 
 if(myNumber){
 	answers.myNumber = myNumber
+}
+
+if(message){
+	alert(message);
 }
 
 

@@ -13,7 +13,7 @@ module.exports = function(app, express) {
 	// app.use('/user', userRouter);
 	// app.use('/admin', adminRouter);
 
- //  require('./routers/userRouter.js')(userRouter);
+  // require('./routers/userRouter.js')(userRouter);
  //  require('./routers/adminRouter.js')(adminRouter);
 
 };
