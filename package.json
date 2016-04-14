@@ -7,8 +7,9 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "express": "^4.13.1",
     "body-parser": "^1.14.1",
+    "express": "^4.13.1",
+    "mongoose": "^4.4.12",
     "nodemon": "^1.3.7"
   },
   "devDependencies": {
@@ -23,6 +24,10 @@
   "scripts": {
     "start": "./node_modules/.bin/nodemon server/index.js --ignore client/ --ignore node_modules/",
     "test": "./test/run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwheatley3/wwsh.git"
   },
   "bugs": {
     "url": "https://github.com/dyale/node-catapult-angular/issues"
