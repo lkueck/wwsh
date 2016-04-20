@@ -44,18 +44,18 @@ angular.module('myApp.services',[])
   //   });    
   // }
 
-  // service.getResponses = function() {
-  //   return $http({
-  //     method: 'GET',
-  //     url: '/admin/response'
-  //   })
-  //   .then(function(res) {
-  //     return res.data;
-  //   })
-  //   .catch(function(error) {
-  //     console.error('Error saving response', error);
-  //   })
-  // };
+  service.getZings = function() {
+    return $http({
+      method: 'GET',
+      url: '/user/zings'
+    })
+    .then(function(res) {
+      return res.data;
+    })
+    .catch(function(error) {
+      console.error('Error getting zings', error);
+    })
+  };
 	
 	return service;
 
