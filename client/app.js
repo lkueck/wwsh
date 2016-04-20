@@ -2,7 +2,8 @@
 
 angular.module('myApp', [
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'myApp.services'
   ])
 
     .config(function($stateProvider, $urlRouterProvider) {

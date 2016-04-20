@@ -7,14 +7,28 @@
   <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
     Single Toggle
   </button> -->
-  <div class='row'>
-	  <div class="col-md-4">Profile
+<div class="container-fluid" ng-show="!authorized">
+	<h1>Login Here!</h1>
+	<form class="form-signin" name="loginForm" ng-submit="login()" ng-show="!authorized">
+		<h2 class="form-signin-heading">Please Sign In</h2>
+	  <input class="form-control" type="text" ng-model="user.username" placeholder="username" required>
+	  <input class="form-control" type="password" ng-model="user.password" placeholder="password" required>
+	  <br>
+	  <button class="btn btn-lg btn-primary" ng-if="!!user.password && !!user.username">Login</button>
+	  <p ng-if="!user.password || !user.username">Please Enter Your Credentails</p>
+	</form>
 
-	  </div>
-	  <div class="col-md-4">Tweets
 
-	  </div>
-	  <div class="col-md-4">All Users
-	  
-	  </div>
-	</div>
+	<p ng-show="errorMessage">Sign In Error: {{errorMessage}}</p>
+</div>
+<div class='row'>
+  <div class="col-md-4">Profile
+
+  </div>
+  <div class="col-md-4">Tweets
+
+  </div>
+  <div class="col-md-4">All Users
+  
+  </div>
+</div>
