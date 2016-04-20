@@ -44,10 +44,24 @@ angular.module('myApp.services',[])
   //   });    
   // }
 
-  service.getZings = function() {
+  service.getAllZings = function() {
     return $http({
       method: 'GET',
-      url: '/user/zings'
+      url: '/zing/all'
+    })
+    .then(function(res) {
+      return res.data;
+    })
+    .catch(function(error) {
+      console.error('Error getting zings', error);
+    })
+  };
+
+  service.zingify = function() {
+    return $http({
+      method: 'POST',
+      url: '/zing',
+      data: {username: username, message: message}
     })
     .then(function(res) {
       return res.data;
