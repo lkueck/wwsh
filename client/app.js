@@ -7,9 +7,9 @@ angular.module('myApp', [
   ])
 
     .config(function($stateProvider, $urlRouterProvider) {
-    
+
     $urlRouterProvider.otherwise('/');
-    
+
     $stateProvider
         .state('home', {
             url: '/',
@@ -22,5 +22,5 @@ angular.module('myApp', [
           templateUrl: 'views/about.html',
           controller: 'AboutCtrl'
         });
-        
+
 });

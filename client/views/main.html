@@ -1,5 +1,23 @@
-<div class='jumbotron'>
-  <h1>{{welcome}}</h1>
-  <a class='btn' ui-sref='about'>{{buttonText}}</a>
+
+<div ui-view>
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-4">
+        <div class="form-group">
+          <br />
+          <label for="usr">Username:</label>
+          <input type="text" class="form-control" id="usr">
+          <br />
+          <label for="comment">Zing:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+          <br />
+          <button type="button" class="btn btn-primary btn-block">Send Zing!</button>
+        </div>
+      </div>
+      <div class = "col-md-8" style = "text-align: center; overflow: scroll">
+        All the tweets in the sever will go here
+      </div>
+    </div>
+  </div>
+
 </div>
-<div ui-view></div>
