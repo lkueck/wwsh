@@ -65,37 +65,24 @@ angular.module('myApp.services',[])
   auth.login = function(user) {
     return $http({
       method: 'POST',
-      url: '/admin/login',
+      url: '/user/login',
       data: user
     })
     .then(function(res) {
       return res.data;
     })
     .catch(function(error) {
-      console.error('Error logging into the ADMIN page:', error);
+      console.error('Error logging into the ZINGERS:', error);
     })
   };
 
   auth.logout = function() {
-    sessionStorage.removeItem('eHonda');
+    sessionStorage.removeItem('ZING');
   };
 
   auth.isAuth = function() {
-    return !!sessionStorage.getItem('eHonda');
+    return !!sessionStorage.getItem('ZING');
   }
 
-  auth.createAdmin = function(admin) {
-    return $http({
-      method: 'POST',
-      url: '/admin/create',
-      data: admin
-    })
-    .then(function(res) {
-      return res.data;
-    })
-    .catch(function(error) {
-      console.error('error creating new admin:', error);
-    })
-  };
   return auth;
 })

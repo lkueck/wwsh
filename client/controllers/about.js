@@ -15,11 +15,26 @@ angular.module('myApp')
           $scope.user.username = '';
           $scope.user.password = '';
   			} else {
-          sessionStorage.setItem('ZING', resp.token);
+          sessionStorage.setItem('ZING', resp.username);
   			}
   		})
   		.catch(function(error) {
   			console.error('error when login attempted: ', error);
   		});
-  	};	
+  	};
+  	$scope.signup = function() {
+  		Auth.signup($scope.user)
+  		.then(function(resp){
+  			if (resp.error) {
+  				$scope.errorMessage = resp.error;
+          $scope.user.username = '';
+          $scope.user.password = '';
+  			} else {
+          sessionStorage.setItem('ZING', resp.username);
+  			}
+  		})
+  		.catch(function(error) {
+  			console.error('error when login attempted: ', error);
+  		});
+  	};		
   }]);
