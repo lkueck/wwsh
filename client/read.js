@@ -1,8 +1,8 @@
 var answers = window.answers
-var sectionOne = false;
-var sectionTwo = false;
-var sectionThree = false;
-var sectionFour = false;
+answers.sectionOne = false;
+answers.sectionTwo = false;
+answers.sectionThree = false;
+answers.sectionFour = false;
 
 
 var number = typeof answers.myNumber === "number";
@@ -18,7 +18,7 @@ console.log(team)
 console.log(testTrue)
 
 if(number && string && boolean && team && testTrue){
-	sectionOne = true;
+	answers.sectionOne = true;
 }
 
 
@@ -40,16 +40,16 @@ if(check.length >= 4){
 }
 
 if(zings && teamArray){
-	sectionTwo = true;
+	answers.sectionTwo = true;
 }
 
 if(answers.loopPractice() === 5){
 	//Need to get how any tweets we will send them and set that to the equals to value
-	sectionThree = true;
+	answers.sectionThree = true;
 }
 
 if(answers.onlyYours() === 1){
-	sectionFour = true;
+	answers.sectionFour = true;
 }
 
 
