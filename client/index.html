@@ -3,17 +3,34 @@
   <head>
     <meta charset="utf-8">
   </head>
-  
+
   <body ng-app="myApp">
-    <div class="container">
-      <div ui-view></div>
-      </div>
-    </div>
+
+    <div id="header">
+        <div class="wrap">
+            <div id="logo">
+                <img class="myimg" src= "http://www.fixpicture.org/medias/1456338690_tmp_MakerSquare.jpg"></img>
+            </div><!--logo-->
+        </div>
+            <div id="menu_wrapper">
+                <ul id="nav">
+                    <li id="end"><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <h2 class="maker">MakerMessage</h2>
+    </div><!--header-->
+        <div ui-view></div>
+       </div>
   </body>
 
 
 
   <footer>
+    <script src = "dataTypeBasics.js"></script>
+    <script src = "objectAndArrays.js"></script>
+    <script src = "loops.js"></script>
+    <script src = "conditionals.js"></script>
+    <script src = "read.js"></script>
     <script src="./lib/angular/angular.js"></script>
     <script src="./lib/angular-animate/angular-animate.js"></script>
     <script src="./lib/angular-cookies/angular-cookies.js"></script>

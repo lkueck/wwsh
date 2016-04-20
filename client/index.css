@@ -24,3 +24,63 @@ h1{
 	text-align: center;
 	border-radius: 2px;
 }
+#header {
+		 float: left;
+		 min-width: 100%;
+		 background-color: #93bdd6;
+		 padding: 52px 0px;
+			 }
+#logo {
+	position:absolute;
+	float: left;
+	width: 338px;
+	height: 100px;
+	z-index:300;
+}
+
+#menu_wrapper {
+	float: right;
+	line-height: 40px;
+	z-index:600;
+}
+#nav {
+	float: right;
+	list-style: none;
+}
+#nav li {
+	float: left;
+	padding-right: 40px;
+}
+#nav li #end {
+	float: left;
+	padding-right: 0px;
+}
+
+.myimg {
+	width:130px;
+	height:auto;
+}
+
+.maker{
+	text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+	font-family: font-family: "Gotham Bold",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size:50px
+}
+
+
+
+@media screen and (max-width: 800px) {
+ #menu { display: block;
+	 text-align: left;
+	 list-style: none; }
+ #nav.js { display: none; }
+ ul { width:100%; }
+ li { width:100%;
+	 border-right:none; }
+ }
+
+@media screen and (min-width: 700px) {
+ #menu { display: none; }
+ }
