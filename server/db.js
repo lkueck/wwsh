@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/tour');
+// mongoose.connect('mongodb://localhost/tour');
+mongoose.connect('mongodb://macandmichael:m&m@ds013911.mlab.com:13911/mkstour')
 var db = mongoose.connection;
 
 db.once('open', function(){
