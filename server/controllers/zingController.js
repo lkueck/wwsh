@@ -3,9 +3,15 @@ var Zing = require('../db.js').Zing;
 var ZingController = {};
 
 ZingController.getAllZings = function(req, res){
+	var results = [];
 	Zing.find()
 	.then(function(zings){
-		res.send(zings);
+		zings.forEach(function(zing){
+			var tmpZing = zing.toObject();
+			tmpZing.time = tmpZing._id.getTimestamp();
+			results.push(tmpZing);
+		});
+		res.send(results);
 	})
 	.catch(function(error){
 		res.send({error:error});
