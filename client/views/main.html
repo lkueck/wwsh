@@ -16,14 +16,15 @@
       </div>
       <div class = "col-md-2"></div>
       <div class = "col-md-6" style = "text-align: center; overflow: scroll">
-        <div ng-repeat = "zing in zingArray" class = "zingBox">
-          <div class = "row">
-            <div class = "username">
+        <div ng-repeat = "zing in zingArray">
+          <div class = "zing">
+            <p class = "zing">
               {{zing.username}}
-            </div>
-            <div class = "message">
+            </p>
+            <p class ="zing">
               {{zing.message}}
-            </div>
+            </p>
+          </div>
           </div>
         </div>
       </div>
