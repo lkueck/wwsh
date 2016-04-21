@@ -1,32 +1,29 @@
 
-
-<div class = "container">
-
-  <div class = "row">
-
-    <div class = "col-md-4">
-      <form class="form-group" ng-submit="zingify()">
-        <br />
-        <label for="usr">Username:</label>
-        <input type="text" class="form-control" id="usr">
-        <br />
-        <label for="comment">Zing:</label>
-        <textarea class="form-control" rows="5" id="comment"></textarea>
-        <br />
-        <button type="button" class="btn btn-primary btn-block">Send Zing!</button>
-      </form>
-    </div>
-
-    <div class = "col-md-2"></div>
-
-    <div class = "col-md-6" style = "text-align: center; overflow: scroll">
-      <div ng-repeat = "zing in zingArray" class = "zingBox">
-        <div class = "row">
-          <div class = "username">
-            {{zing.username}}
-          </div>
-          <div class = "message">
-            {{zing.message}}
+<div ui-view>
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-4">
+        <div class="form-group">
+          <br />
+          <label for="usr">Username:</label>
+          <input type="text" class="form-control" id="usr">
+          <br />
+          <label for="comment">Zing:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+          <br />
+          <button type="button" class="btn btn-primary btn-block">Send Zing!</button>
+        </div>
+      </div>
+      <div class = "col-md-2"></div>
+      <div class = "col-md-6" style = "text-align: center; overflow: scroll">
+        <div ng-repeat = "zing in zingArray">
+          <div class = "zing">
+            <p class = "zing">
+              {{zing.username}}
+            </p>
+            <p class ="zing">
+              {{zing.message}}
+            </p>
           </div>
         </div>
       </div>
@@ -35,5 +32,3 @@
   </div>
 
 </div>
-
-
