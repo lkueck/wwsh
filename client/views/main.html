@@ -1,34 +1,29 @@
-
-<div ui-view>
-  <div class = "container">
-    <div class = "row">
-      <div class = "col-md-4">
-        <div class="form-group">
-          <br />
-          <label for="usr">Username:</label>
-          <input type="text" class="form-control" id="usr">
-          <br />
-          <label for="comment">Zing:</label>
-          <textarea class="form-control" rows="5" id="comment"></textarea>
-          <br />
-          <button type="button" class="btn btn-primary btn-block">Send Zing!</button>
-        </div>
-      </div>
-      <div class = "col-md-2"></div>
-      <div class = "col-md-6" style = "text-align: center; overflow: scroll">
-        <div ng-repeat = "zing in zingArray">
-          <div class = "zing">
-            <p class = "zing">
-              {{zing.username}}
-            </p>
-            <p class ="zing">
-              {{zing.message}}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<div class="panel right">
+  <h1>Send a Zing!</h1>
+  <p>
+    <form>
+      Username:
+      <input name="username" type="text">
+      Message:
+      <textarea name="text" class="ribbitText" style = "font-size: 18px"></textarea>
+      <input type="submit" value="Send Zing!">
+    </form>
+  </p>
+</div>
+<div id="ribbits" class="panel left">
+  <h1>All Zings</h1>
+  <div class="ribbitWrapper">
+    <img class="avatar" src="gfx/user2.png">
+    <span class="name">Kermit</span> @username <span class="time">15m</span>
+    <p>
+      Cras justo odio, dapibus ac facilisis in, egestas Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#">http://net.tutsplus.com/tutorials/php/ ...</a>
+    </p>
   </div>
-
+  <div class="ribbitWrapper">
+    <img class="avatar" src="gfx/user1.png">
+    <span class="name">Frogger</span> @username <span class="time">15m</span>
+    <p>
+      Cras justo odio, dapibus ac facilisis in, egestas Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#">http://net.tutsplus.com/tutorials/php/ ...</a>
+    </p>
+  </div>
 </div>
