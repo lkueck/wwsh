@@ -5,6 +5,7 @@ answers.sectionThree = false;
 answers.sectionFour = false;
 
 
+
 var number = typeof answers.myNumber === "number";
 var string = typeof answers.myString === "string";
 var boolean = typeof answers.myBoolean === "boolean";
@@ -38,7 +39,7 @@ if(zings && teamArray){
 	answers.sectionTwo = true;
 }
 
-if(answers.loopPractice() === 5){
+if(answers.loopPractice() === 6){
 	//Need to get how any tweets we will send them and set that to the equals to value
 	answers.sectionThree = true;
 }
@@ -47,11 +48,12 @@ if(answers.onlyYours() === 1){
 	answers.sectionFour = true;
 }
 
-
-
-
-console.log('answers', answers);
-console.log("sectionOne", answers.sectionOne);
-console.log("sectionTwo", answers.sectionTwo);
-console.log("sectionThree", answers.sectionThree);
-console.log("sectionFour", answers.sectionFour);
+if(answers.sectionOne && answers.sectionTwo && answers.sectionThree && answers.sectionFour){
+	alert("You have finished the race! Run to the whiteboard in the lecture room and write your team name on the list on the whiteboard")
+} else if(answers.sectionOne && answers.sectionTwo && answers.sectionThree){
+	alert("Make sure not to prick yourself when prying your clue from this desert staple")
+} else if(answers.sectionOne && answers.sectionTwo){
+	alert("Its heating up, make sure not to hit start or you might burn your clue")
+} else if(answers.sectionOne){
+	alert("Walk past Vader then hang a right and grab a cold one")
+}

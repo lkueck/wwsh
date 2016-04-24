@@ -1,6 +1,6 @@
 //Create a variable named teamArray and set it equal to an array each of your names as values inside of it
 
-var teamArray = ["Mac", "Michael"];
+var teamArray = [];
 
 //Create varaibles named one through four below
 //Each of them should have a value of an object
