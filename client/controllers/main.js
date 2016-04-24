@@ -79,7 +79,4 @@ angular.module('myApp')
   		})
   	}
 
-
-    console.log('answer scope', $scope.answers)
-
   }]);
