@@ -3,10 +3,11 @@
 //Do not touch the function declaration
 function onlyYours(zingArray){
 
-  var zingArray = [{username: "Mac"}, {username: "Person"}];
-  var count = 0;
-  //Write a for loop here that looks over the array coming in (zingArray), logs each value to the console, and adds one to count
 
+  var target = "Makersquare"
+  var zingArray = [{username: "Makersquare"}, {username: "Austin"}, {username: "Tacos"}];
+  var count = 0;
+  //Write a for loop here that looks over the array coming in (zingArray), logs each value to the console, and adds one to count if the username has a value of Makersquare (target)
 
 
 
