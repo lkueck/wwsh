@@ -1,29 +1,22 @@
-<div class="panel right">
+<div class="panel right" ng-controller = "MainCtrl as main" ng-show = "answers.sectionTwo">
   <h1>Send a Zing!</h1>
   <p>
     <form>
       Username:
-      <input name="username" type="text">
+      <input ng-model ="username" name="username" type="text" id="username">
       Message:
-      <textarea name="text" class="ribbitText" style = "font-size: 18px"></textarea>
-      <input type="submit" value="Send Zing!">
+      <textarea ng-model = "message" name="text" class="ribbitText" style = "font-size: 18px" id="message"></textarea>
+      <input type="submit" value="Send Zing!" ng-click = "zingify(username, message)">
     </form>
   </p>
 </div>
-<div id="ribbits" class="panel left">
+<div id="ribbits" class="panel left" ng-controller = "MainCtrl as main" ng-show="answers.sectionOne">
   <h1>All Zings</h1>
-  <div class="ribbitWrapper">
+  <div class="ribbitWrapper" ng-repeat = "zing in zingArray" ng-show = "answers.sectionThree">
     <img class="avatar" src="gfx/user2.png">
-    <span class="name">Kermit</span> @username <span class="time">15m</span>
+    <span class="name">{{zing.username}}</span> @username <span class="time">15m</span>
     <p>
-      Cras justo odio, dapibus ac facilisis in, egestas Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#">http://net.tutsplus.com/tutorials/php/ ...</a>
-    </p>
-  </div>
-  <div class="ribbitWrapper">
-    <img class="avatar" src="gfx/user1.png">
-    <span class="name">Frogger</span> @username <span class="time">15m</span>
-    <p>
-      Cras justo odio, dapibus ac facilisis in, egestas Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. <a href="#">http://net.tutsplus.com/tutorials/php/ ...</a>
+    {{zing.message}}
     </p>
   </div>
 </div>
