@@ -4,13 +4,13 @@ function onlyYours(zingArray){
   var zingArray = [{username: "Mac"}, {username: "Person"}];
   var count = 0;
   //Write a for loop here that looks over the array coming in (zingArray), logs each value to the console, and adds one to count
-  for(var i = 0; i < zingArray.length; i++){
-    if(zingArray[i].username === "Mac"){
-      console.log(zingArray[i]);
-      count++;
-    }
-  }
-  return count;
+  // for(var i = 0; i < zingArray.length; i++){
+  //   if(zingArray[i].username === "Mac"){
+  //     console.log(zingArray[i]);
+  //     count++;
+  //   }
+  // }
+  // return count;
 }
 
 

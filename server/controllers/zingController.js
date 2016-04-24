@@ -18,7 +18,7 @@ ZingController.zingify = function(req, res){
 	Zing({
 		username: username,
 		message: message
-	})
+	}).save()
 	.then(function(resp){
 		res.send(200);
 	})

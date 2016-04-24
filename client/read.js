@@ -11,11 +11,6 @@ var boolean = typeof answers.myBoolean === "boolean";
 var team = answers.team === answers.partnerOne + " and " + partnerTwo;
 var testTrue = answers.trueValue === true
 
-console.log(number)
-console.log(string)
-console.log(boolean)
-console.log(team)
-console.log(testTrue)
 
 if(number && string && boolean && team && testTrue){
 	answers.sectionOne = true;
@@ -56,7 +51,7 @@ if(answers.onlyYours() === 1){
 
 
 console.log('answers', answers);
-console.log("sectionOne", sectionOne);
-console.log("sectionTwo", sectionTwo);
-console.log("sectionThree", sectionThree);
-console.log("sectionFour", sectionFour);
+console.log("sectionOne", answers.sectionOne);
+console.log("sectionTwo", answers.sectionTwo);
+console.log("sectionThree", answers.sectionThree);
+console.log("sectionFour", answers.sectionFour);
