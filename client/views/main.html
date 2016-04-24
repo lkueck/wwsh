@@ -1,4 +1,5 @@
-<div class="panel right" ng-controller = "MainCtrl as main" ng-show = "answers.sectionTwo">
+
+<div class="panel right" ng-controller = "MainCtrl as main" ng-show = "answers.sectionOne">
   <h1>Send a Zing!</h1>
   <p>
     <form>
@@ -10,11 +11,11 @@
     </form>
   </p>
 </div>
-<div id="ribbits" class="panel left" ng-controller = "MainCtrl as main" ng-show="answers.sectionOne">
+<div id="ribbits" class="panel left" ng-controller = "MainCtrl as main" ng-show="answers.sectionTwo">
   <h1>All Zings</h1>
   <div class="ribbitWrapper" ng-repeat = "zing in zingArray" ng-show = "answers.sectionThree">
     <img class="avatar" src="gfx/user2.png">
-    <span class="name">{{zing.username}}</span> @username <span class="time">15m</span>
+    <span class="name">{{zing.username}}</span> @makersquare <span class="time">11m</span>
     <p>
     {{zing.message}}
     </p>
