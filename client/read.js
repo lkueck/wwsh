@@ -1,8 +1,8 @@
 var answers = window.answers
-answers.sectionOne = true;//false;
-answers.sectionTwo = true;//false;
-answers.sectionThree = true;//false;
-// answers.sectionFour = true;//false;
+answers.sectionOne = false;
+answers.sectionTwo = false;
+answers.sectionThree = false;
+answers.sectionFour = false;
 
 
 
