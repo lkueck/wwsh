@@ -10,27 +10,19 @@ var teamArray = ["Mac", "Michael"];
 //The last key in each object will be called message and will hold a value of your zing
 
 var zing1 = {
-  username: "Mac",
-  message: "First test",
-  time: "3:16"
+
 }
 
 var zing2 = {
-  username: "Mac",
-  time: "3:17",
-  message: "Second test"
+
 }
 
 var zing3 = {
-  username: "Michael",
-  time: "3:18",
-  message: "Third Test"
+
 }
 
 var zing4 = {
-  username: "Micahel",
-  time: "3:19",
-  message: "Fourth test"
+
 }
 
 

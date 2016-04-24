@@ -41,7 +41,7 @@ angular.module('myApp.services',[])
   //   })
   //   .catch(function(error) {
   //     console.error('Error creating user', error);
-  //   });    
+  //   });
   // }
 
   service.getAllZings = function() {
@@ -57,7 +57,7 @@ angular.module('myApp.services',[])
     })
   };
 
-  service.zingify = function() {
+  service.zingify = function(username, message) {
     return $http({
       method: 'POST',
       url: '/zing',
@@ -70,7 +70,7 @@ angular.module('myApp.services',[])
       console.error('Error getting zings', error);
     })
   };
-	
+
 	return service;
 
 })
