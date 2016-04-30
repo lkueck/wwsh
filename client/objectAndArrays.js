@@ -1,6 +1,6 @@
 //Create a variable named teamArray and set it equal to an array each of your names as values inside of it
 
-var teamArray = [];
+var teamArray = ["Mac", "Sean"];
 
 //Create varaibles named one through four below
 //Each of them should have a value of an object
@@ -14,15 +14,21 @@ var zing1 = {
 }
 
 var zing2 = {
-
+  username: "Mac",
+  message: "Hey",
+  time: "9:00"
 }
 
 var zing3 = {
-
+  username: "Mac",
+  message: "Hey",
+  time: "9:00"
 }
 
 var zing4 = {
-
+  username: "Mac",
+  message: "Hey",
+  time: "9:00"
 }
 
 

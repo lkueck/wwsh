@@ -22,6 +22,7 @@ angular.module('myApp')
       })
     }
     $scope.getZings();
+    //Notes from the test in class
     $interval(function(){
       $scope.getZings();
     }, 2000)
